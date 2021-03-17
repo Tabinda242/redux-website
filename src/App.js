@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
+import { connect } from 'react-redux'
+import Home from './Components/Home/Home';
+import Cart from './Components/Cart/Cart';
+import Items from './Components/Items/Items';
+import ProductItem from './Components/ProductItem/ProductItem';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
+
+import './App.css';
+import Favourite from './Components/FavouriteItem/Favourite';
+import PostItem from './Components/PostItem/PostItem';
+
+const App = ({ current }) => {
+  // console.log(props)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <div>
+        <Home />
+
+        <Switch>
+         <Route path="/cart" component={Cart}></Route>
+         <Route path="/favouriteitem" component={Favourite}></Route>
+         <Route path="/postitem" component={PostItem}></Route>
+         <Route exact path="/" component={Items}></Route>
+          {!current ? (
+            <Redirect to="/" />
+          ) : (
+            <Route exact path="/item/:id" component={ProductItem}></Route>
+          )}
+       </Switch>
+
+      </div>
+    </Router>
+  )
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+    current: state.shop.currentItem
+  }
+}
+
+export default connect(mapStateToProps)(App);

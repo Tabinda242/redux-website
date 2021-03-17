@@ -1,0 +1,161 @@
+.container1 {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  /* padding-left: 200px; */
+  margin: 25px;
+  /* margin-left: 300px; */
+  /* width: 800px;  */
+  padding: 10px;
+  background-color: rgb(230,230,230);
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  border-radius: 2%;
+ 
+}
+.img_size {
+   width: 200px;
+   height: 150px;
+}
+.container2 {
+ margin: 20px;
+}
+.title {
+  font-weight: bold;
+  font-size: 15px;
+}
+/* .description {
+  font-size: 15px;
+} */
+
+.delete_btn {
+  margin-bottom: 130px;
+}
+
+@media screen and (max-width: 490px) {
+  .container1 {
+    display: flex;
+    flex-direction: row;
+  }
+  .img_size {
+    width: 150px;
+    height: 120px;
+ }
+ .container2 {
+  width: 350px;
+ }
+ .title {
+  font-size: 13px;
+}
+.description {
+  font-size: 12px;
+}
+}
+@media screen and (max-width: 440px) {
+  .img_size {
+    width: 120px;
+    height: 80px;
+ }
+ .title {
+  font-size: 12px;
+}
+.description {
+  font-size: 10px;
+}
+}
+@media screen and (max-width: 400px) {
+  .container1 {
+    padding: 2px;
+  }
+  .img_size {
+    width: 100px;
+    height: 60px;
+ }
+ .title {
+  font-size: 10px;
+}
+.description {
+  font-size: 8px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .cart {
+    margin: 2rem auto;
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cart__items {
+    flex: 0.7;
+    margin-right: 1rem;
+  }
+  
+  .cart__summary {
+    height: 250px;
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+  }
+  
+  .summary__title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .summary__price {
+    display: flex;
+    align-items: center;
+  }
+  
+  .summary__price span:nth-child(1) {
+    font-size: 0.9rem;
+    flex: 0.6;
+  }
+  
+  .summary__price span:nth-child(2) {
+    flex: 0.4;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .summary__checkoutBtn {
+    padding: 10px 17px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    background: var(--primary-color);
+    color: var(--light-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .summary__checkoutBtn:focus {
+    outline: none;
+    border: 1px solid var(--secondary-color);
+  }
+  
+  .summary__checkoutBtn:hover {
+    opacity: 0.75;
+  } */
