@@ -5,11 +5,12 @@ import Cart from './Components/Cart/Cart';
 import Items from './Components/Items/Items';
 import ProductItem from './Components/ProductItem/ProductItem';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
 import './App.css';
 import Favourite from './Components/FavouriteItem/Favourite';
 import PostItem from './Components/PostItem/PostItem';
+import Login from  './Components/Login/Login';
+import SignUp from './Components/SignUp/SignUp';
+import PrivateRoute from './Components/AppRoute/PrivateRoute';
 
 const App = ({ current }) => {
   // console.log(props)
@@ -21,7 +22,9 @@ const App = ({ current }) => {
         <Switch>
          <Route path="/cart" component={Cart}></Route>
          <Route path="/favouriteitem" component={Favourite}></Route>
-         <Route path="/postitem" component={PostItem}></Route>
+         <PrivateRoute path="/postitem" component={PostItem}></PrivateRoute>
+         <Route path="/login" component={Login}></Route>
+         <Route path="/signup" component={SignUp}></Route>
          <Route exact path="/" component={Items}></Route>
           {!current ? (
             <Redirect to="/" />

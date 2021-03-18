@@ -55,3 +55,9 @@ export const removeFromFavourite = (ItemID, isFavourite) => {
         }
     }
 }
+export const userLogin = (userData) => {
+    return {
+        type: actionTypes.USER_LOGIN,
+        payload: userData,
+    }
+}

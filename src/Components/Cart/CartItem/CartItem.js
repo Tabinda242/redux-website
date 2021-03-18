@@ -14,20 +14,21 @@ const CartItem = ({ item, removeFromCart, adjustQty }) => {
   
   return (
     <div className="container">
-      {/* <img src={item.image}
-           alt={item.title}  
-          /> */}
-      <div>
-        <p>{item.title}</p>
-        <p>{item.description}</p>
-        <p>$ {item.price}</p>
+      <img src={item.img}
+           alt={item.title} 
+           className="cartItem_img" 
+          />
+      <div className="container2">
+        <p className="cartItem_title">{item.title}</p>
+        <p className="cartItem_desc">{item.description}</p>
+        <p className="cartItem_price">$ {item.price}</p>
       </div>
       <div>
-        <div>
-          <label htmlFor="qty">Qty</label>
-          <input min="1" type="number" id="qty" name="qty" value={input} onChange={onChangeHandler} />
+        <div className="container3">
+          <label htmlFor="qty" className="cartItem_qty">Qty</label>
+          <input min="1" type="number" id="qty" name="qty" value={input} onChange={onChangeHandler} className="cartItem_qty_input"/>
         </div>
-        <button onClick={() => removeFromCart(item.id)}>Delete</button>
+        <button onClick={() => removeFromCart(item.id)} className="cartItem_delete">Delete</button>
       </div>
     </div>
   );
