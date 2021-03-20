@@ -17,20 +17,20 @@ const Home = ({ cart }) => {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light, main">
         <div className="container-fluid">
           <span>Navbar</span>
           <div className="collapse navbar-collapse" id="navbarNav">
 
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link to="/" className="home">Home</Link>
+                <Link to="/" className="home, Nav-link2">Home</Link>
               </li>
               <li className="nav-item">
-                <Link to="/login" className="home">Login</Link>
+                <Link to="/login" className="home, Nav-link2">Login</Link>
               </li>
               <li className="nav-item">
-                <Link to="/signup" className="home">SignUp</Link>
+                <Link to="/signup" className="home, Nav-link2">SignUp</Link>
               </li>
               <li className="nav-item" >
                 <Link to="/favouriteitem" className="Nav-link2">Favourite</Link>

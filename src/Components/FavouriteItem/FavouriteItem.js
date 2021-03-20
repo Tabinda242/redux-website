@@ -2,6 +2,7 @@ import React from 'react';
 // import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { removeFromFavourite } from '../../Redux/Shopping/ShoppingActions';
+import './FavouriteItem.css';
 
 const FavouriteItem = ({ item, removeFromFavourite }) => {
 

@@ -9,7 +9,7 @@ import { Spinner } from "react-bootstrap"
 
 
 const PostItem = ({ products }) => {
-    //    console.log(products)
+       console.log(products)
     const [newItem, setNewItem] = useState({
         id: products.length + 1,
         img: null,

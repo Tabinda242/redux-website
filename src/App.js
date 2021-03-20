@@ -11,6 +11,7 @@ import PostItem from './Components/PostItem/PostItem';
 import Login from  './Components/Login/Login';
 import SignUp from './Components/SignUp/SignUp';
 import PrivateRoute from './Components/AppRoute/PrivateRoute';
+import CheckOut from './Components/CheckOutForm/CheckOut';
 
 const App = ({ current }) => {
   // console.log(props)
@@ -21,6 +22,7 @@ const App = ({ current }) => {
 
         <Switch>
          <Route path="/cart" component={Cart}></Route>
+         <PrivateRoute path="/checkout" component={CheckOut}></PrivateRoute>
          <Route path="/favouriteitem" component={Favourite}></Route>
          <PrivateRoute path="/postitem" component={PostItem}></PrivateRoute>
          <Route path="/login" component={Login}></Route>

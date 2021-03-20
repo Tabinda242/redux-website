@@ -1,0 +1,14 @@
+.checkout_container {
+    max-width: 600px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-top: 5%;
+    padding: 30px;
+
+}
+.checkout_submit {
+    width: 100%;
+    margin-top: 15px;
+    background-color: black !important;
+}

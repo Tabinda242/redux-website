@@ -38,6 +38,60 @@ const INITIAL_STATE = {
         img:
           "https://media.istockphoto.com/photos/mug-on-plate-filled-with-coffee-surrounded-by-coffee-beans-picture-id157528129?k=6&m=157528129&s=612x612&w=0&h=-Jm8OkpkDbTHIAXLuXaZ1_VUsz8_0B9okYWQJdgvnpI=",
       },
+      {
+        id: 5,
+        title: "Books That CHANGED My Life",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+        price: 20.0,
+        img:
+          "https://i.dawn.com/large/2020/01/5e1839f4e3ee1.png",
+      },
+      {
+        id: 6,
+        title: "Books That CHANGED My Life",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+        price: 20.0,
+        img:
+          "https://im.indiatimes.in/media/content/2018/Aug/zomato_1534311967_725x725.jpg",
+      },
+      {
+        id: 7,
+        title: "Books That CHANGED My Life",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+        price: 20.0,
+        img:
+          "https://recipefairy.com/wp-content/uploads/2020/07/kfc-chicken-500x375.jpg",
+      },
+      {
+        id: 8,
+        title: "Books That CHANGED My Life",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+        price: 20.0,
+        img:
+          "https://images.deliveryhero.io/image/fd-pk/LH/h7pw-hero.jpg",
+      },
+      {
+        id: 8,
+        title: "Books That CHANGED My Life",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+        price: 20.0,
+        img:
+          "https://magazine.foodpanda.co.th/wp-content/uploads/sites/14/2016/04/foodpanda-Magazine-TH-Bangkok-Burger-1.jpg",
+      },
+      {
+        id: 8,
+        title: "Books That CHANGED My Life",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+        price: 20.0,
+        img:
+          "https://static.toiimg.com/photo/68850601.cms",
+      },
       
   ],
   cart: [],

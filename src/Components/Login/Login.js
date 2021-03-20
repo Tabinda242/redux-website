@@ -84,7 +84,7 @@ const Login = () => {
 
                 <Form.Group controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" value={login.password} onChange={HandleChange} name="password" placeholder="Password" />
+                    <Form.Control type="password" value={login.password} onChange={HandleChange} name="password" placeholder="Enter atleast 6 characters" />
                 </Form.Group>
                 {/* <Form.Group controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Check me out" />
