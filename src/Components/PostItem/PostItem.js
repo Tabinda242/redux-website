@@ -110,18 +110,18 @@ const PostItem = ({ products }) => {
                 <br />
                 <p className="title">(including condition and reason for selling)</p> */}
 
-                <label className="title">Condition:
+                {/* <label className="title">Condition:
                             <input type="radio" name="condition" value="New" className="input3" />New
-                            <input type="radio" name="condition" value="Used" className="input4" />Used</label><br />
+                            <input type="radio" name="condition" value="Used" className="input4" />Used</label><br /> */}
 
-                <label>Price:
-                <input name="price" required="required" size="20" maxLength="20" className=""
+                <label className="price">Price:
+                <input name="price" required="required" size="20" maxLength="20" className="input5"
                         value={newItem.price}
                         onChange={onChangeHandler} />
                 </label>
 
                 <p className="title3"> Description:</p>
-                <textarea name="description" cols="30" rows="4"
+                <textarea name="description" cols="30" rows="4"className="input5"
                     value={newItem.description}
                     onChange={onChangeHandler} ></textarea>
                 <br />
@@ -131,12 +131,12 @@ const PostItem = ({ products }) => {
                 <input type="file" name="Choose File" onChange={onImgChangeHandler} />
                 <br />
                 <div>
-                    {img ? <>{newItem.img ? <img src={newItem.img}  height="150" width="150" alt={newItem.img.name} /> :
+                    {img ? <>{newItem.img ? <img src={newItem.img}  height="150" width="200" alt={newItem.img.name} /> :
                     <Spinner animation="border" className='loading' />} </> : <img src="https://via.placeholder.com/150/09f/fff.png%20C/O%20https://placeholder.com/" alt="placeHolder" /> }
                 </div>
                  <br />
 
-                <button type="Post">Submit</button>
+                <button type="Post" className="post_btn"> Post </button>
             </form>
         </div>
     )                    
